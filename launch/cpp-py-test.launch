@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="cpppub" pkg="performance_tests" type="cpppub" />
+  <node name="pysub" pkg="performance_tests" type="sub.py" />
+</launch>
