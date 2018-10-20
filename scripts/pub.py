@@ -22,11 +22,11 @@ def sender():
 	if freqpublish == 1:
            freqpub.publish(pubFreq)
            print 'pubf = ' + str(pubFreq.data)
-           freqpublish = 0
         rate.sleep()
 
 def freqpub_callback(event):
     freqpublish = 1
+    print 'Timer called at ' + str(event.current_real)
    
 if __name__ == '__main__':
     try:
